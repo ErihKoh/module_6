@@ -230,3 +230,45 @@
  'nulla', 'proident',
  'tempor', 'velit',
  'veniam' ]; */
+
+// codevar
+
+// const points = (games) => {
+//   let total = 0;
+//   for (let game of games) {
+//     let [x, , y] = [...game];
+
+//     x = Number(x);
+//     y = Number(y);
+//     let point = 0;
+//     if (x > y) {
+//       point = 3;
+//     } else if (x < y) {
+//       point = 0;
+//     } else point = 1;
+
+//     total = point + total;
+//   }
+//   return total;
+// };
+
+// points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"]);
+
+// const abbrevName = (name) => {
+//   const abb = [];
+//   const names = name.split(" ");
+//   for (const name of names) {
+//     console.log(name[0]);
+
+//     abb.push(name[0].toUpperCase());
+//   }
+//   return abb.join(".");
+// };
+
+// abbrevName("sam Harris");
+
+// const arrayPlusArray = (arr1, arr2) =>
+//   [...arr1, ...arr2].reduce((acc, value) => acc + value, 0);
+// console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+
+// // arrayPlusArray([1, 2, 3], [4, 5, 6]);
