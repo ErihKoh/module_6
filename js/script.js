@@ -209,7 +209,15 @@
 // task 10
 
 // Write code under this line
-const getSortedUniqueSkills = (array) => array;
+// const getSortedUniqueSkills = (array) =>
+//   array
+//     .reduce(
+//       (acc, { skills }) => [...acc, ...skills],
+
+//       []
+//     )
+//     .filter((value, index, array) => array.indexOf(value) === index)
+//     .sort();
 
 // console.log(getSortedUniqueSkills(users));
 /* [ 'adipisicing', 'amet',
