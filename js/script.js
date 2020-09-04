@@ -272,3 +272,93 @@
 // console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
 
 // // arrayPlusArray([1, 2, 3], [4, 5, 6]);
+
+// const toAlternatingCase = (str) => {
+//   const arr = str
+//     .split("")
+//     .map((el) =>
+//       el === el.toLowerCase() ? el.toUpperCase() : el.toLoweCase()
+//     );
+//   // const arr1 = arr.map((el) =>
+//   //   el === el.toLowerCase() ? el.toUpperCase() : el.toLoweCase()
+//   // );
+//   return console.log(arr.join(""));
+// };
+
+// toAlternatingCase("hello world");
+
+// const isUpperCase = (str) => str === str.toUpperCase();
+
+// console.log(isUpperCase("HELLO I AM DONALD"));
+
+// const arrayMadness = (a, b) => {
+//   let aPow = a.reduce((acc, value) => acc + value ** 2, 0);
+//   let bPow = b.reduce((acc, value) => acc + value ** 3, 0);
+
+//   return aPow > bPow;
+// };
+// console.log(arrayMadness([4, 5, 6], [1, 2, 3]));
+
+// const arrayMadness = (a, b) =>
+//   a.reduce((acc, value) => acc + Math.pow(value, 2), 0)
+//   > b.reduce((acc, value) => acc + Math.pow(value, 3), 0);
+
+// function correctPolishLetters(string) {
+//   const arr = string.split("");
+//   for (let i = 0; i < arr.length; i += 1) {
+//     if (arr[i] === "ą") {
+//       arr[i] = "a";
+//     } else if (arr[i] === "ę") {
+//       arr[i] = "e";
+//     } else if (arr[i] === "ć") {
+//       arr[i] = "c";
+//     } else if (arr[i] === "ł") {
+//       arr[i] = "l";
+//     } else if (arr[i] === "ń") {
+//       arr[i] = "n";
+//     } else if (arr[i] === "ó") {
+//       arr[i] = "o";
+//     } else if (arr[i] === "ś") {
+//       arr[i] = "s";
+//     } else if (arr[i] === "ź") {
+//       arr[i] = "z";
+//     } else if (arr[i] === "ż") {
+//       arr[i] = "z";
+//     }
+//   }
+//   return console.log(arr.join(""));
+// }
+// correctPolishLetters("Jędrzej Błądziński");
+
+// function strCount(str, letter) {
+//   const arrs = str.split("");
+//   let quantity = 0;
+//   for (const arr of arrs) {
+//     if (arr === letter) {
+//       quantity += 1;
+//     }
+//   }
+//   return quantity;
+// }
+
+// console.log(strCount("Hello", "o"));
+
+// function strCount(str, letter) {
+//   return str.split('').filter(c => c == letter).length;
+// }
+
+// function differenceInAges(ages) {
+//   let min = Math.min(...ages);
+//   let max = Math.max(...ages);
+//   let diff = max - min;
+//   return [min, max, diff];
+// }
+// console.log(differenceInAges([82, 15, 6, 38, 35]));
+
+// const removeEveryOther = (arr) => arr.filter((el, index) => index % 2 === 0);
+
+// console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+// const number = (arr) => arr.map((el, index) => `${index + 1}: ${el}`);
+
+// console.log(number(["a", "b", "c"]));
